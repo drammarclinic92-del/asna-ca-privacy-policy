@@ -3,48 +3,201 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ASNA-CA Your Important Reminder Privacy Policy.">
   <title>ASNA-CA Privacy Policy</title>
   <style>
-    body{font-family:Arial,sans-serif;line-height:1.7;max-width:850px;margin:40px auto;padding:0 20px;color:#222}
-    h1,h2{line-height:1.3}
-    .date{color:#666}
+    * { box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.8;
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 18px;
+      color: #263238;
+      background: #f3f8ff;
+    }
+    .container {
+      background: #fff;
+      padding: 28px;
+      border-radius: 18px;
+      box-shadow: 0 4px 22px rgba(30,70,120,.07);
+    }
+    h1 { color: #244f80; text-align: center; }
+    h2 { color: #315f91; margin-top: 28px; font-size: 20px; }
+    p, li { font-size: 15px; }
+    .date { color: #777; text-align: center; }
+    .brand { text-align: center; color: #315f91; font-weight: bold; }
+    .language {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    button {
+      border: 0;
+      border-radius: 9px;
+      padding: 10px 22px;
+      background: #e6eef9;
+      color: #244f80;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    button.active { background: #315f91; color: white; }
+    a { color: #245e9b; }
+    .section { display: none; }
+    .section.active { display: block; }
+    [dir="rtl"] { text-align: right; }
+    footer {
+      border-top: 1px solid #e5eaf0;
+      margin-top: 35px;
+      padding-top: 18px;
+      text-align: center;
+      color: #777;
+      font-size: 13px;
+    }
+    @media(max-width:600px) {
+      body { margin: 12px auto; padding: 0 10px; }
+      .container { padding: 20px 17px; }
+    }
   </style>
 </head>
 <body>
-  <h1>ASNA-CA Privacy Policy</h1>
-  <p class="date">Last updated: September 22, 2026</p>
+<div class="container">
+  <div class="brand">ASNA-CA · YOUR IMPORTANT REMINDER</div>
 
-  <p>ASNA-CA is an alarm and reminder application. This Privacy Policy explains how ASNA-CA handles information when you use the application.</p>
+  <div class="language">
+    <button id="enBtn" class="active" onclick="showLanguage('en')">English</button>
+    <button id="arBtn" onclick="showLanguage('ar')">العربية</button>
+  </div>
 
-  <h2>1. Information We Collect</h2>
-  <p>ASNA-CA does not require you to create an account and does not ask you to provide your name, email address, phone number, contacts, precise location, or other personal information in order to use the core alarm and reminder features.</p>
+  <section id="english" class="section active" lang="en" dir="ltr">
+    <h1>Privacy Policy</h1>
+    <p class="date">Last updated: November 11, 2026</p>
 
-  <h2>2. Alarm and Reminder Data</h2>
-  <p>Information you enter into the application for alarms and reminders is stored locally on your device to provide the application's functionality. We do not intentionally transmit your alarm or reminder content to our servers.</p>
+    <p>ASNA-CA – Your Important Reminder respects your privacy. This application helps users organize daily reminders, religious reminders, personal tasks, and important appointments. This policy explains how information is handled when you use the application.</p>
 
-  <h2>3. Internet and Third-Party Content</h2>
-  <p>The application may use an internet connection to retrieve application content or configuration when needed. Third-party services may have their own privacy practices and policies. ASNA-CA does not intentionally send your personal information to third parties for advertising or sale.</p>
+    <h2>1. Information We Collect</h2>
+    <p>The application does not require account registration or sign-in. You do not need to provide your name, email address, or phone number to use its reminder features.</p>
+    <p>The application does not collect or transmit your contacts, photos, audio recordings, or precise location.</p>
 
-  <h2>4. Advertising</h2>
-  <p>If advertising is displayed in the application, advertising services may process information according to their own privacy policies and the settings available on your device. Any advertising-related data practices will be disclosed in the Google Play Data safety information as applicable.</p>
+    <h2>2. Information Stored on Your Device</h2>
+    <p>Information you choose to enter may include:</p>
+    <ul>
+      <li>Daily and religious reminders and their schedules.</li>
+      <li>Personal tasks and recurring appointments.</li>
+      <li>Vehicle details and maintenance records.</li>
+      <li>Doctor appointment details and optional notes.</li>
+      <li>Brush replacement reminders and their dates.</li>
+      <li>Language and application preferences.</li>
+    </ul>
+    <p>This information is stored locally on your device using the application's private storage. The current version does not provide cloud synchronization or upload your reminder records to our servers.</p>
 
-  <h2>5. Data Security</h2>
-  <p>Because alarm and reminder information is primarily stored locally on your device, the security of that information also depends on the security of your device and operating system. We do not claim that any electronic storage method is completely secure.</p>
+    <h2>3. Notifications and Permissions</h2>
+    <p>The application requests notification permission to deliver reminders you choose to enable. It may also use exact-alarm scheduling permission to schedule reminders at selected times and a device-restart permission to restore scheduled reminders after a reboot.</p>
+    <p>These permissions are used for reminder functionality and are not intended to collect personal information or track users. You can manage permissions through your device settings.</p>
 
-  <h2>6. Data Retention and Deletion</h2>
-  <p>We do not maintain a server-side account containing your alarm or reminder data. You can remove locally stored application data by deleting the alarms/reminders within the app where supported, clearing the app's data, or uninstalling the application from your device.</p>
+    <h2>4. Internet and External Content</h2>
+    <p>The application may retrieve promotional content, such as an advertisement image or its configuration, from a developer-managed GitHub repository over HTTPS.</p>
+    <p>When this content is requested, the hosting provider may process technical connection information, such as your IP address and request metadata, according to its own privacy policy.</p>
+    <p>The current version does not integrate the Google AdMob SDK or behavioral advertising and analytics SDKs. If the application introduces additional advertising or analytics services in a future version, this policy and the applicable Google Play disclosures will be updated.</p>
+    <p>Promotional content may contain links to external websites. When you open those links, the privacy policy of the external website applies.</p>
 
-  <h2>7. Children's Privacy</h2>
-  <p>ASNA-CA is not directed specifically to children. We do not knowingly collect personal information from children.</p>
+    <h2>5. Information Sharing</h2>
+    <p>We do not sell, rent, or trade users' personal information.</p>
+    <p>Reminder information stored locally is not uploaded to or shared with our servers through the application's reminder features. The external content hosting provider may process technical request information when promotional content is retrieved.</p>
 
-  <h2>8. Changes to This Privacy Policy</h2>
-  <p>We may update this Privacy Policy when the application or its data practices change. The updated policy will be published at this URL with a revised update date.</p>
+    <h2>6. Data Retention and Deletion</h2>
+    <p>Reminder information and preferences remain on your device while the application's data is present. You can delete this information through your device's application settings or by uninstalling the application. This may permanently remove locally stored reminders and records.</p>
 
-  <h2>9. Contact</h2>
-  <p>If you have questions about this Privacy Policy or ASNA-CA's privacy practices, contact:</p>
-  <p><strong>Email:</strong> almosafer1992@gmail.com</p>
+    <h2>7. Children's Privacy</h2>
+    <p>ASNA-CA is intended for general use and is not specifically directed at children. We do not knowingly collect personal information from children.</p>
 
-  <h2>10. Developer</h2>
-  <p><strong>Application:</strong> ASNA-CA</p>
+    <h2>8. Data Security</h2>
+    <p>We take reasonable measures to reduce unauthorized access to information. Since reminder data is stored locally, users are also responsible for protecting their devices and device access credentials. No electronic storage method can be guaranteed to be completely secure.</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this policy when application features or data practices change. The updated policy will be published at this URL with a revised update date.</p>
+
+    <h2>10. Contact Us</h2>
+    <p>For questions about this Privacy Policy or ASNA-CA, contact:</p>
+    <p><strong>Email:</strong> <a href="mailto:almosafer1992@gmail.com">almosafer1992@gmail.com</a></p>
+
+    <h2>11. Developer</h2>
+    <p><strong>Application:</strong> ASNA-CA – Your Important Reminder</p>
+    <p><strong>Developer:</strong> Ammar Hussein Alrawi</p>
+  </section>
+
+  <section id="arabic" class="section" lang="ar" dir="rtl">
+    <h1>سياسة الخصوصية</h1>
+    <p class="date">آخر تحديث: 11 نوفمبر 2026</p>
+
+    <p>يحترم تطبيق أسناكا ASNA-CA – Your Important Reminder خصوصيتك. يساعدك التطبيق على تنظيم التذكيرات اليومية والدينية والمهام الشخصية والمواعيد المهمة. توضح هذه السياسة كيفية التعامل مع المعلومات عند استخدام التطبيق.</p>
+
+    <h2>1. المعلومات التي نجمعها</h2>
+    <p>لا يتطلب التطبيق إنشاء حساب أو تسجيل الدخول، ولا تحتاج إلى تقديم اسمك أو بريدك الإلكتروني أو رقم هاتفك لاستخدام وظائف التذكير.</p>
+    <p>لا يقوم التطبيق بجمع أو إرسال جهات الاتصال أو الصور أو التسجيلات الصوتية أو الموقع الجغرافي الدقيق.</p>
+
+    <h2>2. المعلومات المحفوظة على جهازك</h2>
+    <p>قد تشمل المعلومات التي تدخلها بنفسك:</p>
+    <ul>
+      <li>التذكيرات اليومية والدينية ومواعيدها.</li>
+      <li>المهام الشخصية والمواعيد المتكررة.</li>
+      <li>بيانات السيارة وسجلات الصيانة.</li>
+      <li>تفاصيل مواعيد الطبيب والملاحظات الاختيارية.</li>
+      <li>تذكيرات تبديل الفرشاة وتواريخها.</li>
+      <li>إعدادات اللغة والتفضيلات الخاصة بالتطبيق.</li>
+    </ul>
+    <p>تُحفظ هذه المعلومات محلياً على جهازك باستخدام مساحة التخزين الخاصة بالتطبيق. ولا يوفر الإصدار الحالي مزامنة سحابية أو رفع سجلات التذكيرات إلى خوادمنا.</p>
+
+    <h2>3. الإشعارات والأذونات</h2>
+    <p>يطلب التطبيق إذن الإشعارات لإرسال التذكيرات التي تختار تفعيلها. وقد يستخدم إذن جدولة المنبهات الدقيقة لضبط مواعيد التذكيرات، وإذن استقبال إشعار إعادة تشغيل الجهاز لاستعادة جدولة التذكيرات بعد إعادة تشغيل الهاتف.</p>
+    <p>تُستخدم هذه الأذونات لتشغيل وظائف التذكير، ولا تهدف إلى جمع المعلومات الشخصية أو تتبع المستخدمين. ويمكنك التحكم في الأذونات من إعدادات جهازك.</p>
+
+    <h2>4. الإنترنت والمحتوى الخارجي</h2>
+    <p>قد يجلب التطبيق محتوى تعريفياً أو ترويجياً، مثل صورة إعلان أو إعداداته، من مستودع GitHub يديره المطور عبر اتصال HTTPS.</p>
+    <p>عند طلب هذا المحتوى، قد يعالج مزود الاستضافة معلومات تقنية مرتبطة بالاتصال، مثل عنوان IP وبيانات الطلب، وفقاً لسياسة الخصوصية الخاصة به.</p>
+    <p>لا يدمج الإصدار الحالي حزمة Google AdMob أو حزم الإعلانات السلوكية والتحليلات. وإذا أُضيفت خدمات إعلانية أو تحليلية أخرى في إصدار مستقبلي، فسيتم تحديث هذه السياسة وإفصاحات Google Play ذات الصلة.</p>
+    <p>قد يحتوي المحتوى الترويجي على روابط لمواقع خارجية. وعند فتح هذه الروابط، تسري سياسة الخصوصية الخاصة بالموقع الخارجي.</p>
+
+    <h2>5. مشاركة المعلومات</h2>
+    <p>لا نبيع أو نؤجر أو نتاجر بالمعلومات الشخصية للمستخدمين.</p>
+    <p>لا يتم رفع معلومات التذكيرات المحفوظة محلياً أو مشاركتها مع خوادمنا من خلال وظائف التذكير في التطبيق. وقد يعالج مزود استضافة المحتوى الخارجي معلومات تقنية عن الطلب عند تحميل المحتوى الترويجي.</p>
+
+    <h2>6. الاحتفاظ بالبيانات وحذفها</h2>
+    <p>تبقى معلومات التذكيرات والتفضيلات على جهازك ما دامت بيانات التطبيق موجودة. ويمكنك حذف هذه المعلومات من إعدادات التطبيقات في جهازك أو بإزالة التطبيق. وقد يؤدي ذلك إلى حذف التذكيرات والسجلات المحفوظة محلياً نهائياً.</p>
+
+    <h2>7. خصوصية الأطفال</h2>
+    <p>تطبيق ASNA-CA مخصص للاستخدام العام وليس موجهاً خصيصاً للأطفال. ولا نجمع عن قصد معلومات شخصية من الأطفال.</p>
+
+    <h2>8. حماية المعلومات</h2>
+    <p>نتخذ تدابير مناسبة للحد من الوصول غير المصرح به إلى المعلومات. وبما أن بيانات التذكيرات تُحفظ محلياً، تقع على المستخدم أيضاً مسؤولية حماية جهازه ووسائل الوصول إليه. ولا يمكن ضمان أمان أي وسيلة تخزين إلكترونية بصورة مطلقة.</p>
+
+    <h2>9. التعديلات على سياسة الخصوصية</h2>
+    <p>قد نقوم بتحديث هذه السياسة عند تغيير ميزات التطبيق أو ممارسات التعامل مع البيانات. وسيتم نشر النسخة المحدثة على هذا الرابط مع تعديل تاريخ آخر تحديث.</p>
+
+    <h2>10. التواصل معنا</h2>
+    <p>للاستفسارات المتعلقة بسياسة الخصوصية أو تطبيق ASNA-CA، يمكن التواصل عبر:</p>
+    <p><strong>البريد الإلكتروني:</strong> <a href="mailto:almosafer1992@gmail.com">almosafer1992@gmail.com</a></p>
+
+    <h2>11. المطور</h2>
+    <p><strong>التطبيق:</strong> ASNA-CA – Your Important Reminder</p>
+    <p><strong>المطور:</strong> Ammar Hussein Alrawi</p>
+  </section>
+
+  <footer>
+    © 2026 ASNA-CA – Your Important Reminder
+  </footer>
+</div>
+
+<script>
+  function showLanguage(language) {
+    document.getElementById('english').classList.toggle('active', language === 'en');
+    document.getElementById('arabic').classList.toggle('active', language === 'ar');
+    document.getElementById('enBtn').classList.toggle('active', language === 'en');
+    document.getElementById('arBtn').classList.toggle('active', language === 'ar');
+    document.documentElement.lang = language;
+    document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
+  }
+</script>
 </body>
 </html>
